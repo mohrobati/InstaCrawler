@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Meti. Robati</title>
+  <style>
+    .container {
+      background-color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: blue;
+      flex-direction: column;
+    }
+
+    .date-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    #submit {
+      font-size: 2em;
+      margin-top: 20px;
+      padding: 20px;
+      width: 400px;
+      background-color: brown;
+      color: white;
+      border: 0px;
+      border-radius: 10px;
+    }
+
+    #submit:hover {
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body class="container">
+  <h1>Mehdi Robati</h1>
+  <h2>M.A. Photography Project</h2>
+  <br>
+  <form action="/feed" method="POST">
+    <h3>Location ID : </h3>
+    <input type="text" id="location" name="location" />
+    <br>
+    <div class="date-container">
+      <h3>To Date : </h3>
+      <input style="margin-right: 10px" type="text" id="to-year" name="toYear" />
+      <h3>To Month : </h3>
+      <input type="text" id="to-month" name="toMonth" />
+      <h3>To Day : </h3>
+      <input type="text" id="to-day" name="toDay" />
+      <br>
+    </div>
+    <input type="submit" id="submit" value="Fetch 🍑" target="_blank" />
+  </form>
+  <br>
+</body>
+
+</html>
